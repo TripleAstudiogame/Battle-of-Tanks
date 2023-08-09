@@ -1,0 +1,479 @@
+[gd_scene load_steps=22 format=3 uid="uid://dexgeqst6s31y"]
+
+[ext_resource type="Texture2D" uid="uid://cas5hidfhwmvx" path="res://images/Menu_fon.png" id="1_v5oro"]
+[ext_resource type="Texture2D" uid="uid://d1lhwfh6t1o8w" path="res://images/Choose_tank_buttons/goback.png" id="2_xxb37"]
+[ext_resource type="Texture2D" uid="uid://d122wafrnb0aa" path="res://images/Choose_tank_buttons/goback_2.png" id="3_5jgwy"]
+[ext_resource type="Script" path="res://scenes/Upgrade.gd" id="4_rcgom"]
+[ext_resource type="FontFile" uid="uid://dmx01k76x24yo" path="res://font/ofont.ru_Raydis.ttf" id="5_jpoo6"]
+[ext_resource type="Texture2D" uid="uid://buminn5siuglt" path="res://images/Choose_tank_buttons/MONEY.png" id="6_ej11v"]
+[ext_resource type="Texture2D" uid="uid://dixaht5xgrkfd" path="res://images/upgrade/Upgrade_1.png" id="7_scqds"]
+[ext_resource type="Texture2D" uid="uid://7l8j7w8anl0d" path="res://images/upgrade/pvo_lvl_1.png" id="8_6wpdy"]
+[ext_resource type="Texture2D" uid="uid://boodxgou4csua" path="res://images/upgrade/artilerialvl1.png" id="9_rv775"]
+[ext_resource type="Texture2D" uid="uid://ucnbotijd20v" path="res://images/upgrade/pvo_lvl_2.png" id="9_xvp1g"]
+[ext_resource type="Texture2D" uid="uid://cpuwo02y84l0e" path="res://images/upgrade/pvo_lvl_3.png" id="10_2fxwp"]
+[ext_resource type="Texture2D" uid="uid://bga0tmu0pi1aw" path="res://images/Choose_tank_buttons/tanks_statistic/faq.png" id="11_jsucf"]
+[ext_resource type="Texture2D" uid="uid://c6gm6u43162br" path="res://images/Choose_tank_buttons/tanks_statistic/faq_1.png" id="12_epqjb"]
+[ext_resource type="Texture2D" uid="uid://dgc5u26tka8ga" path="res://images/upgrade/artilerialvl2.png" id="12_puwpk"]
+[ext_resource type="Texture2D" uid="uid://bs0r58u8f63ce" path="res://images/upgrade/artilerialvl3.png" id="13_lcc7j"]
+[ext_resource type="Texture2D" uid="uid://bkhwfrnq6b4t2" path="res://images/upgrade/exp_lvl1.png" id="14_8mdw7"]
+[ext_resource type="Texture2D" uid="uid://cdtj3tgj07j7d" path="res://images/upgrade/exp_lvl2.png" id="15_e0wsf"]
+[ext_resource type="Texture2D" uid="uid://kl1qv431ju4c" path="res://images/upgrade/exp_lvl3.png" id="16_y270w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sxr2m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_6wpdy")
+}],
+"loop": false,
+"name": &"lvl1",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_xvp1g")
+}],
+"loop": false,
+"name": &"lvl2",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_2fxwp")
+}],
+"loop": false,
+"name": &"lvl3",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xyg6x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_rv775")
+}],
+"loop": false,
+"name": &"lvl1",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_puwpk")
+}],
+"loop": false,
+"name": &"lvl2",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_lcc7j")
+}],
+"loop": false,
+"name": &"lvl3",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dw4nr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_8mdw7")
+}],
+"loop": true,
+"name": &"lvl1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_e0wsf")
+}],
+"loop": true,
+"name": &"lvl2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_y270w")
+}],
+"loop": true,
+"name": &"lvl3",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_rcgom")
+
+[node name="Fon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_v5oro")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 55
+theme_override_constants/margin_top = 35
+theme_override_constants/margin_right = 35
+theme_override_constants/margin_bottom = 35
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 150
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 200
+
+[node name="Upgrade" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture_normal = ExtResource("2_xxb37")
+texture_pressed = ExtResource("3_5jgwy")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer2/Upgrade"]
+layout_mode = 0
+offset_left = -19.0
+offset_top = 120.0
+offset_right = 142.0
+offset_bottom = 181.0
+
+[node name="Upgrade" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/Upgrade/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 30
+text = "GO BACK
+"
+
+[node name="Upgrade_label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 76
+text = "upgrade"
+
+[node name="RUBL_ICON" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("6_ej11v")
+expand_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer2/RUBL_ICON"]
+layout_mode = 0
+offset_left = -60.0
+offset_top = 124.0
+offset_right = 183.0
+offset_bottom = 196.0
+
+[node name="mONEY_POINT" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/RUBL_ICON/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "0
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 100
+
+[node name="Antiairbox" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("7_scqds")
+
+[node name="Anit-air_phto" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/Antiairbox"]
+position = Vector2(152, 158.5)
+scale = Vector2(0.3635, 0.3635)
+sprite_frames = SubResource("SpriteFrames_sxr2m")
+animation = &"lvl3"
+
+[node name="Anti_air" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/Antiairbox"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -123.5
+offset_top = 36.5
+offset_right = 123.5
+offset_bottom = 63.5
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 24
+text = "Anti-air defense"
+horizontal_alignment = 1
+
+[node name="lvl" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/Antiairbox"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -33.5
+offset_top = -127.5
+offset_right = 33.5
+offset_bottom = -100.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 24
+text = "lvl 1"
+horizontal_alignment = 1
+
+[node name="price_air" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/Antiairbox"]
+layout_mode = 2
+offset_left = 132.0
+offset_top = 333.0
+offset_right = 208.0
+offset_bottom = 363.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 26
+text = "0
+"
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/Antiairbox"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.5
+offset_top = 92.0
+offset_right = 56.5
+offset_bottom = 132.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 32
+text = "buy"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/Antiairbox"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 327.5
+offset_right = 126.0
+offset_bottom = 360.5
+texture = ExtResource("6_ej11v")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="faq_air" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer/Antiairbox"]
+layout_mode = 2
+offset_left = 232.0
+offset_top = 67.5
+offset_right = 287.0
+offset_bottom = 119.5
+texture_normal = ExtResource("11_jsucf")
+texture_pressed = ExtResource("12_epqjb")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="ARTILERIY" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("7_scqds")
+
+[node name="ARTILLERY" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/ARTILERIY"]
+layout_mode = 2
+offset_left = 29.0
+offset_top = 38.5
+offset_right = 276.0
+offset_bottom = 65.5
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 24
+text = "ARTILLERY"
+horizontal_alignment = 1
+
+[node name="lvl" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/ARTILERIY"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -35.0
+offset_top = -126.5
+offset_right = 32.0
+offset_bottom = -99.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 24
+text = "lvl 1"
+
+[node name="price_art" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/ARTILERIY"]
+layout_mode = 2
+offset_left = 132.0
+offset_top = 333.0
+offset_right = 208.0
+offset_bottom = 363.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 26
+text = "0
+"
+
+[node name="artileria_buy_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/ARTILERIY"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -59.0
+offset_top = -100.5
+offset_right = 54.0
+offset_bottom = -60.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 32
+text = "buy"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/ARTILERIY"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 327.5
+offset_right = 126.0
+offset_bottom = 360.5
+texture = ExtResource("6_ej11v")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Artileru" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/ARTILERIY"]
+position = Vector2(151, 145.5)
+scale = Vector2(0.459, 0.5055)
+sprite_frames = SubResource("SpriteFrames_xyg6x")
+animation = &"lvl1"
+
+[node name="faq_artylery" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer/ARTILERIY"]
+layout_mode = 2
+offset_left = 229.0
+offset_top = 65.5
+offset_right = 284.0
+offset_bottom = 117.5
+texture_normal = ExtResource("11_jsucf")
+texture_pressed = ExtResource("12_epqjb")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="EXP" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("7_scqds")
+
+[node name="EXP" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/EXP"]
+layout_mode = 2
+offset_left = 29.0
+offset_top = 38.5
+offset_right = 276.0
+offset_bottom = 65.5
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 24
+text = "EXP+
+"
+horizontal_alignment = 1
+
+[node name="lvl" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/EXP"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -33.5
+offset_top = -128.5
+offset_right = 33.5
+offset_bottom = -101.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 24
+text = "lvl 1"
+
+[node name="price_exp" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/EXP"]
+layout_mode = 2
+offset_left = 132.0
+offset_top = 333.0
+offset_right = 208.0
+offset_bottom = 363.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 26
+text = "0
+"
+
+[node name="exp_buy_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/EXP"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -56.5
+offset_top = -101.5
+offset_right = 56.5
+offset_bottom = -61.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("5_jpoo6")
+theme_override_font_sizes/font_size = 32
+text = "buy"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/EXP"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 327.5
+offset_right = 126.0
+offset_bottom = 360.5
+texture = ExtResource("6_ej11v")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="exp" type="AnimatedSprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer/EXP"]
+position = Vector2(150, 180.5)
+scale = Vector2(0.38, 0.38)
+sprite_frames = SubResource("SpriteFrames_dw4nr")
+animation = &"lvl3"
+
+[node name="faq_artylery2" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer/EXP"]
+layout_mode = 2
+offset_left = 233.0
+offset_top = 64.5
+offset_right = 288.0
+offset_bottom = 116.5
+texture_normal = ExtResource("11_jsucf")
+texture_pressed = ExtResource("12_epqjb")
+ignore_texture_size = true
+stretch_mode = 4
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/Upgrade" to="." method="_on_upgrade_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Antiairbox/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/ARTILERIY/artileria_buy_button" to="." method="_on_artileria_buy_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/EXP/exp_buy_button" to="." method="_on_exp_buy_button_pressed"]

@@ -1,0 +1,206 @@
+[gd_scene load_steps=21 format=3 uid="uid://cboo44d6fsleg"]
+
+[ext_resource type="Script" path="res://scenes/faq_scene.gd" id="1_or063"]
+[ext_resource type="Texture2D" uid="uid://d1lhwfh6t1o8w" path="res://images/Choose_tank_buttons/goback.png" id="2_noqwi"]
+[ext_resource type="Texture2D" uid="uid://d122wafrnb0aa" path="res://images/Choose_tank_buttons/goback_2.png" id="3_6spjt"]
+[ext_resource type="Texture2D" uid="uid://dyr2mog641c0o" path="res://images/Choose_tank_buttons/studio_kipedia/Isu152_rus.png" id="3_iec8x"]
+[ext_resource type="Texture2D" uid="uid://8etmuc2h7hbx" path="res://images/Choose_tank_buttons/studio_kipedia/Isu152_eng.png" id="4_77edw"]
+[ext_resource type="Texture2D" uid="uid://jdl1vy0gr7f3" path="res://images/Choose_tank_buttons/studio_kipedia/su_100_y_eng.png" id="4_jkw4b"]
+[ext_resource type="Texture2D" uid="uid://b5lis5hc2qd5u" path="res://images/Choose_tank_buttons/studio_kipedia/SU-122-54_eng.png" id="5_83x8l"]
+[ext_resource type="Texture2D" uid="uid://doe0421ntys88" path="res://images/Choose_tank_buttons/studio_kipedia/SU-122-54_rus.png" id="5_ohhqp"]
+[ext_resource type="Texture2D" uid="uid://dinfq3rsn7sxu" path="res://images/Choose_tank_buttons/studio_kipedia/su_100_y_rus.png" id="7_msckx"]
+[ext_resource type="Texture2D" uid="uid://caflce1v8prfr" path="res://images/Choose_tank_buttons/studio_kipedia/su152_eng.png" id="7_ru32w"]
+[ext_resource type="Texture2D" uid="uid://bfkupntmypaj2" path="res://images/Choose_tank_buttons/studio_kipedia/su-85_eng.png" id="8_x5b5e"]
+[ext_resource type="Texture2D" uid="uid://b6mqdtswf1onr" path="res://images/Choose_tank_buttons/studio_kipedia/su152_rus.png" id="9_abxgn"]
+[ext_resource type="Texture2D" uid="uid://bcf2mpitknexd" path="res://images/Choose_tank_buttons/studio_kipedia/obj-263_eng.png" id="9_x4tx5"]
+[ext_resource type="Texture2D" uid="uid://dtqdpga8nbkvb" path="res://images/Choose_tank_buttons/studio_kipedia/obj-268_rus.png" id="10_hkq7i"]
+[ext_resource type="Texture2D" uid="uid://bp2tql8ewyliw" path="res://images/Choose_tank_buttons/studio_kipedia/su-85_rus.png" id="11_l7tm5"]
+[ext_resource type="Texture2D" uid="uid://in4oyxu5k3ld" path="res://images/Choose_tank_buttons/studio_kipedia/su152_6_eng.png" id="11_wpi4q"]
+[ext_resource type="Texture2D" uid="uid://bihw54egqdsa2" path="res://images/Choose_tank_buttons/studio_kipedia/obj-263_rus.png" id="13_kdami"]
+[ext_resource type="Texture2D" uid="uid://b6i62ppvkglpi" path="res://images/Choose_tank_buttons/studio_kipedia/obj-268_eng.png" id="15_wjm1u"]
+[ext_resource type="Texture2D" uid="uid://cne81rg7wgm0a" path="res://images/Choose_tank_buttons/studio_kipedia/su152_6_rus.png" id="17_3bb23"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_grbvy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_77edw")
+}],
+"loop": true,
+"name": &"Isu-152",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_iec8x")
+}],
+"loop": true,
+"name": &"Isu-152_rus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_83x8l")
+}],
+"loop": true,
+"name": &"Su122-54",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ohhqp")
+}],
+"loop": true,
+"name": &"Su122-54_rus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_jkw4b")
+}],
+"loop": true,
+"name": &"Su_100Y",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_msckx")
+}],
+"loop": true,
+"name": &"Su_100Y_rus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ru32w")
+}],
+"loop": true,
+"name": &"Su_152",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_abxgn")
+}],
+"loop": true,
+"name": &"Su_152_rus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_x5b5e")
+}],
+"loop": true,
+"name": &"Su_85",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_l7tm5")
+}],
+"loop": true,
+"name": &"Su_85_rus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_x4tx5")
+}],
+"loop": true,
+"name": &"obj_263",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_kdami")
+}],
+"loop": true,
+"name": &"obj_263_rus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_hkq7i")
+}],
+"loop": true,
+"name": &"obj_268",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_wjm1u")
+}],
+"loop": true,
+"name": &"obj_268_rus",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_wpi4q")
+}],
+"loop": true,
+"name": &"su152_6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_3bb23")
+}],
+"loop": true,
+"name": &"su152_6_rus",
+"speed": 5.0
+}]
+
+[node name="Faq_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_or063")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(1, 0.282353, 0, 0.733333)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -640.0
+offset_right = 640.0
+offset_bottom = 720.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="MarginContainer/ColorRect/MarginContainer"]
+position = Vector2(118, 86)
+scale = Vector2(0.946969, 0.914378)
+sprite_frames = SubResource("SpriteFrames_grbvy")
+animation = &"su152_6_rus"
+centered = false
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/ColorRect/MarginContainer/AnimatedSprite2D2"]
+offset_left = -90.8161
+offset_top = -52.4947
+offset_right = -9.81607
+offset_bottom = 34.5053
+texture_normal = ExtResource("2_noqwi")
+texture_pressed = ExtResource("3_6spjt")
+ignore_texture_size = true
+stretch_mode = 4
+
+[connection signal="pressed" from="MarginContainer/ColorRect/MarginContainer/AnimatedSprite2D2/TextureButton" to="." method="_on_texture_button_pressed"]

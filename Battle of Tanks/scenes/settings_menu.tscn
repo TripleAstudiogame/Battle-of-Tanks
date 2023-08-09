@@ -1,0 +1,134 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnsjx7656n0g0"]
+
+[ext_resource type="Texture2D" uid="uid://dbmx0ibbmmd5p" path="res://images/lvl_fon.png" id="1_3xoef"]
+[ext_resource type="Script" path="res://scenes/settings_menu.gd" id="1_hryea"]
+[ext_resource type="FontFile" uid="uid://dmx01k76x24yo" path="res://font/ofont.ru_Raydis.ttf" id="2_mkfvx"]
+
+[node name="Settings_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hryea")
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer2"]
+layout_mode = 2
+color = Color(0, 0, 0, 0.392157)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 150
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_3xoef")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/TextureRect"]
+layout_mode = 0
+offset_right = 876.0
+offset_bottom = 416.0
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/TextureRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="sETTINGS_CONTAINER" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="sETTINGS_LABEL" type="Label" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/sETTINGS_CONTAINER"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_mkfvx")
+theme_override_font_sizes/font_size = 56
+text = "SETTINGS"
+
+[node name="Volume" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="volume" type="Label" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/Volume"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_mkfvx")
+theme_override_font_sizes/font_size = 36
+text = "volume"
+vertical_alignment = 1
+
+[node name="HScrollBar_v" type="HScrollBar" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/Volume"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_step = 156.577
+
+[node name="effect" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="effetcs" type="Label" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/effect"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_mkfvx")
+theme_override_font_sizes/font_size = 36
+text = "Effects"
+vertical_alignment = 1
+
+[node name="HScrollBar_e" type="HScrollBar" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/effect"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_step = 156.577
+
+[node name="music" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="music" type="Label" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/music"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_mkfvx")
+theme_override_font_sizes/font_size = 36
+text = "Music
+"
+vertical_alignment = 1
+
+[node name="HScrollBar_m" type="HScrollBar" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/music"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_step = 156.577
+
+[node name="button" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="back_but" type="Button" parent="MarginContainer/TextureRect/MarginContainer/VBoxContainer/button"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_mkfvx")
+theme_override_font_sizes/font_size = 36
+text = "GO Back"
+flat = true
+
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/VBoxContainer/button/back_but" to="." method="_on_back_but_pressed"]

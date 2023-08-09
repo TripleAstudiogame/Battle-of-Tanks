@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://05uqj73dtj8g"]
+
+[ext_resource type="Script" path="res://G_g.gd" id="1_73y3k"]
+[ext_resource type="Texture2D" uid="uid://b1rbxke00bli5" path="res://images/tanks/shoot/SU_85 WALK _1pxArt.png" id="2_wdykj"]
+[ext_resource type="Texture2D" uid="uid://cpuhb63jgadb7" path="res://images/tanks/shoot/SU_85_shoot1pxArt.png" id="3_jp067"]
+[ext_resource type="Texture2D" uid="uid://dle5oqf10n0ii" path="res://images/tanks/shoot/SU_85_shoot2pxArt.png" id="4_cy488"]
+[ext_resource type="Texture2D" uid="uid://bcle1181xdqg" path="res://images/tanks/shoot/SU_85_shoot3pxArt.png" id="5_rheg4"]
+[ext_resource type="Texture2D" uid="uid://bm2ffswrej05h" path="res://images/tanks/shoot/SU_85 WALK _2pxArt.png" id="6_di1t3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wm102"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wdykj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jp067")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cy488")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rheg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_di1t3")
+}],
+"loop": false,
+"name": &"su_85_shoot",
+"speed": 14.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pw0ma"]
+size = Vector2(92.5, 46)
+
+[node name="su_85" type="CharacterBody2D"]
+position = Vector2(298, 121)
+script = ExtResource("1_73y3k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(19, 0)
+scale = Vector2(0.174419, 0.174419)
+sprite_frames = SubResource("SpriteFrames_wm102")
+animation = &"su_85_shoot"
+frame = 3
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_pw0ma")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 95.0
+offset_bottom = 74.0
+text = "УПРАВЛЕНИЕ: W S A D
+СТРЕЛЬБА: ПРОБЕЛЬ
+ESC: ЧТОБЫ ЗАКРЫТЬ ТЕКСТ"

@@ -1,0 +1,527 @@
+[gd_scene load_steps=51 format=3 uid="uid://cn7v3rke1sfyw"]
+
+[ext_resource type="Script" path="res://scenes/choose_tanks.gd" id="1_8mb0l"]
+[ext_resource type="Texture2D" uid="uid://cas5hidfhwmvx" path="res://images/Menu_fon.png" id="2_x3w0w"]
+[ext_resource type="Texture2D" uid="uid://cax548qar4s2" path="res://images/Choose_tank_buttons/upgrade2.png" id="3_34ipa"]
+[ext_resource type="Texture2D" uid="uid://bynldusu53x4j" path="res://images/Choose_tank_buttons/tanks_statistic/isu-152_statitic.png" id="3_bqh8k"]
+[ext_resource type="Texture2D" uid="uid://cppyhc8utmwkb" path="res://images/Choose_tank_buttons/upgrade1.png" id="4_421a5"]
+[ext_resource type="Texture2D" uid="uid://cpa1oowgu6bwx" path="res://images/Choose_tank_buttons/tanks_statistic/isu-152_statitic_rus.png" id="4_lcov7"]
+[ext_resource type="Texture2D" uid="uid://b5tbk5anvfrnc" path="res://images/Choose_tank_buttons/tanks_statistic/su_122-54_statistic.png" id="4_oe155"]
+[ext_resource type="Texture2D" uid="uid://d1h8gb43xura6" path="res://images/Choose_tank_buttons/tanks_statistic/su_122-54_statistic_rus.png" id="5_4c5ff"]
+[ext_resource type="Texture2D" uid="uid://b3el0nmxewm5h" path="res://images/Choose_tank_buttons/tanks_statistic/su-100Y_statistic.png" id="5_d4kcy"]
+[ext_resource type="FontFile" uid="uid://dmx01k76x24yo" path="res://font/ofont.ru_Raydis.ttf" id="5_y1go8"]
+[ext_resource type="Texture2D" uid="uid://dmlrj1kcqpjsm" path="res://images/Choose_tank_buttons/tanks_statistic/su-152_statistic (2).png" id="6_1kqpp"]
+[ext_resource type="Texture2D" uid="uid://buminn5siuglt" path="res://images/Choose_tank_buttons/MONEY.png" id="6_57xv5"]
+[ext_resource type="Texture2D" uid="uid://btcl5oehr7e2h" path="res://images/Choose_tank_buttons/tanks_statistic/su-100Y_statistic_rus.png" id="7_b1h47"]
+[ext_resource type="Texture2D" uid="uid://b6apjp7x3w44r" path="res://images/Choose_tank_buttons/back_button_1.png" id="7_ivy7p"]
+[ext_resource type="Texture2D" uid="uid://bsev5nrgo1irt" path="res://images/Choose_tank_buttons/tanks_statistic/su-85_statistic.png" id="7_j3h0x"]
+[ext_resource type="Texture2D" uid="uid://d1lhwfh6t1o8w" path="res://images/Choose_tank_buttons/goback.png" id="7_xncxk"]
+[ext_resource type="Texture2D" uid="uid://51bemey8uq6b" path="res://images/Choose_tank_buttons/back_button.png" id="8_h7wmk"]
+[ext_resource type="Texture2D" uid="uid://d122wafrnb0aa" path="res://images/Choose_tank_buttons/goback_2.png" id="8_ia2ja"]
+[ext_resource type="Texture2D" uid="uid://b5hh6d3a82a71" path="res://images/Choose_tank_buttons/tanks_statistic/obj_263_statistic.png" id="8_pw15f"]
+[ext_resource type="Texture2D" uid="uid://d2mtf6kt80fw4" path="res://images/Choose_tank_buttons/start_a.png" id="9_bbfc4"]
+[ext_resource type="Texture2D" uid="uid://ch3lhyjfuccs2" path="res://images/Choose_tank_buttons/goback _disabled_left.png" id="9_d3dnv"]
+[ext_resource type="Texture2D" uid="uid://bvubk3pdhvjjp" path="res://images/Choose_tank_buttons/goback — right (1).png" id="9_gh0n1"]
+[ext_resource type="Texture2D" uid="uid://csim4768joam5" path="res://images/Choose_tank_buttons/tanks_statistic/su-152_statistic_rus.png" id="9_s1xmx"]
+[ext_resource type="Texture2D" uid="uid://cfkwnk1n8c0bk" path="res://images/Choose_tank_buttons/goback — right (2).png" id="10_jgpnr"]
+[ext_resource type="Texture2D" uid="uid://b6dy175phxypq" path="res://images/Choose_tank_buttons/start_b.png" id="10_lay6e"]
+[ext_resource type="Texture2D" uid="uid://c5n1mdejh78re" path="res://images/Choose_tank_buttons/Tanks_menu/su85-pix.png" id="11_1w7g3"]
+[ext_resource type="Texture2D" uid="uid://bkwibe7hpawq5" path="res://images/Choose_tank_buttons/tanks_statistic/su-85_statistic_rus.png" id="11_8y54f"]
+[ext_resource type="Texture2D" uid="uid://c71y0h1qnr466" path="res://images/Choose_tank_buttons/tanks_statistic/su152-6_statistic_rus.png" id="11_a3c8i"]
+[ext_resource type="Texture2D" uid="uid://cwm1syhpfncab" path="res://images/Choose_tank_buttons/goback _disabled_right.png" id="12_nlafu"]
+[ext_resource type="Texture2D" uid="uid://b4nohq1n7vjrm" path="res://images/Choose_tank_buttons/tanks_statistic/obj_263_statistic_rus.png" id="13_5c86y"]
+[ext_resource type="Texture2D" uid="uid://caudraqnfloi2" path="res://images/Choose_tank_buttons/tanks_statistic/obj_268_stats_rus.png" id="15_1l5rn"]
+[ext_resource type="Texture2D" uid="uid://dqmsu1vfgqkgt" path="res://images/Choose_tank_buttons/Tanks_menu/isu-152pix.png" id="17_13gc4"]
+[ext_resource type="Texture2D" uid="uid://cf2x5xovv8e6h" path="res://images/Choose_tank_buttons/Tanks_menu/su122-54pix.png" id="18_kjvm3"]
+[ext_resource type="Texture2D" uid="uid://b4p8g2foh2hw7" path="res://images/Choose_tank_buttons/Tanks_menu/su100Y-pix.png" id="19_s171l"]
+[ext_resource type="Texture2D" uid="uid://25hcufmidmod" path="res://images/Choose_tank_buttons/Tanks_menu/su-152 pix.png" id="20_tmpql"]
+[ext_resource type="Texture2D" uid="uid://txpbkq8mopsj" path="res://images/Choose_tank_buttons/Tanks_menu/Obj-263 pix.png" id="22_noo4n"]
+[ext_resource type="Texture2D" uid="uid://y5l2xc6dievj" path="res://images/Choose_tank_buttons/Tanks_menu/obj-268 pix.png" id="23_50oai"]
+[ext_resource type="Texture2D" uid="uid://b5qruapq5xjfw" path="res://images/Choose_tank_buttons/Tanks_menu/su152-6 pix.png" id="24_nt264"]
+[ext_resource type="FontFile" uid="uid://1ssi77ijarya" path="res://font/1375-font.otf" id="25_aqm2r"]
+[ext_resource type="Texture2D" uid="uid://hluqukgi6jgx" path="res://images/Choose_tank_buttons/buy_but.png" id="26_dj3hn"]
+[ext_resource type="Texture2D" uid="uid://3f3joc500i82" path="res://images/Choose_tank_buttons/buy_but1.png" id="27_g7hk1"]
+[ext_resource type="Texture2D" uid="uid://m2xam1531od0" path="res://images/Choose_tank_buttons/buy_but .disabled.png" id="28_3yu0h"]
+[ext_resource type="Texture2D" uid="uid://dmc04y5oiqr61" path="res://images/Choose_tank_buttons/tanks_statistic/obj_268_stats.png" id="31_2fg8t"]
+[ext_resource type="Texture2D" uid="uid://duko6g2qhnrfl" path="res://images/Choose_tank_buttons/tanks_statistic/su152-6_statistic.png" id="32_p3le2"]
+[ext_resource type="Texture2D" uid="uid://0ir8xxh086it" path="res://images/Choose_tank_buttons/start_a_disabled.png" id="34_q8h0n"]
+[ext_resource type="Texture2D" uid="uid://bga0tmu0pi1aw" path="res://images/Choose_tank_buttons/tanks_statistic/faq.png" id="34_sxkx5"]
+[ext_resource type="Texture2D" uid="uid://c6gm6u43162br" path="res://images/Choose_tank_buttons/tanks_statistic/faq_1.png" id="35_0sfxj"]
+[ext_resource type="PackedScene" uid="uid://cboo44d6fsleg" path="res://scenes/faq_scene.tscn" id="39_fjn5b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_msd80"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_bqh8k")
+}],
+"loop": false,
+"name": &"Isu-152",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lcov7")
+}],
+"loop": false,
+"name": &"Isu-152_rus",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_oe155")
+}],
+"loop": false,
+"name": &"Su122-54",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_4c5ff")
+}],
+"loop": false,
+"name": &"Su122-54_rus",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_d4kcy")
+}],
+"loop": false,
+"name": &"Su_100Y",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_b1h47")
+}],
+"loop": false,
+"name": &"Su_100Y_rus",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1kqpp")
+}],
+"loop": false,
+"name": &"Su_152",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_s1xmx")
+}],
+"loop": false,
+"name": &"Su_152_rus",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_j3h0x")
+}],
+"loop": false,
+"name": &"Su_85",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_8y54f")
+}],
+"loop": false,
+"name": &"Su_85_rus",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_pw15f")
+}],
+"loop": false,
+"name": &"obj_263",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_5c86y")
+}],
+"loop": false,
+"name": &"obj_263_rus",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_2fg8t")
+}],
+"loop": false,
+"name": &"obj_268",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_1l5rn")
+}],
+"loop": false,
+"name": &"obj_268_rus",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_p3le2")
+}],
+"loop": false,
+"name": &"su152_6",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_a3c8i")
+}],
+"loop": false,
+"name": &"su152_6_rus",
+"speed": 1.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5he4x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_13gc4")
+}],
+"loop": false,
+"name": &"Isu-152",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_kjvm3")
+}],
+"loop": false,
+"name": &"Su122-54",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_s171l")
+}],
+"loop": false,
+"name": &"Su_100Y",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_tmpql")
+}],
+"loop": false,
+"name": &"Su_152",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_1w7g3")
+}],
+"loop": false,
+"name": &"Su_85",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_noo4n")
+}],
+"loop": false,
+"name": &"obj_263",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_50oai")
+}],
+"loop": false,
+"name": &"obj_268",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_nt264")
+}],
+"loop": false,
+"name": &"su152_6",
+"speed": 1.0
+}]
+
+[node name="Choose_Tanks" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_8mb0l")
+
+[node name="Fon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_x3w0w")
+expand_mode = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 231.0
+offset_top = 214.0
+offset_right = 630.0
+offset_bottom = 714.0
+grow_horizontal = 2
+
+[node name="Tanks_statistic" type="AnimatedSprite2D" parent="MarginContainer3"]
+position = Vector2(205.5, 237)
+scale = Vector2(1.14706, 1.10606)
+sprite_frames = SubResource("SpriteFrames_msd80")
+animation = &"Isu-152_rus"
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -619.0
+offset_top = 248.0
+offset_right = 231.0
+offset_bottom = 677.0
+grow_horizontal = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer2"]
+position = Vector2(220, -43)
+scale = Vector2(0.395017, 0.381422)
+sprite_frames = SubResource("SpriteFrames_5he4x")
+animation = &"Su_100Y"
+centered = false
+
+[node name="Name_of_tnaks" type="Label" parent="MarginContainer2/AnimatedSprite2D"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -474.306
+offset_top = -21.5526
+offset_right = 375.694
+offset_bottom = 138.447
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("25_aqm2r")
+theme_override_font_sizes/font_size = 156
+text = "CY 85"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer2"]
+visible = false
+position = Vector2(433, 108)
+scale = Vector2(0.657509, 0.718466)
+texture = ExtResource("24_nt264")
+
+[node name="Name_of_tnaks" type="Label" parent="MarginContainer2/Sprite2D"]
+offset_left = -465.393
+offset_top = 204.603
+offset_right = 384.607
+offset_bottom = 282.603
+theme_override_fonts/font = ExtResource("25_aqm2r")
+theme_override_font_sizes/font_size = 75
+text = "SU 152-6"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -638.0
+offset_right = 638.0
+offset_bottom = 718.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 45
+theme_override_constants/margin_top = 45
+theme_override_constants/margin_right = 45
+theme_override_constants/margin_bottom = 45
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 155
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 160
+
+[node name="Upgrade" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture_normal = ExtResource("3_34ipa")
+texture_pressed = ExtResource("4_421a5")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/Upgrade"]
+layout_mode = 0
+offset_left = -19.0
+offset_top = 103.0
+offset_right = 142.0
+offset_bottom = 170.0
+
+[node name="Upgrade" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/Upgrade/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_y1go8")
+theme_override_font_sizes/font_size = 30
+text = "UPGRADE"
+
+[node name="Choose_tank_text" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_y1go8")
+theme_override_font_sizes/font_size = 65
+text = "CHOOSE TANK"
+
+[node name="RUBL_ICON" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("6_57xv5")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/RUBL_ICON"]
+layout_mode = 0
+offset_left = -60.0
+offset_top = 105.0
+offset_right = 154.0
+offset_bottom = 177.0
+
+[node name="mONEY_POINT" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/RUBL_ICON/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+text = "0
+"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 600
+
+[node name="Chose_left_but" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("7_xncxk")
+texture_pressed = ExtResource("8_ia2ja")
+texture_disabled = ExtResource("9_d3dnv")
+
+[node name="Chose_right_but" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("9_gh0n1")
+texture_pressed = ExtResource("10_jgpnr")
+texture_disabled = ExtResource("12_nlafu")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 530
+
+[node name="back_button" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture_normal = ExtResource("7_ivy7p")
+texture_pressed = ExtResource("8_h7wmk")
+
+[node name="start_button" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture_normal = ExtResource("9_bbfc4")
+texture_pressed = ExtResource("10_lay6e")
+texture_disabled = ExtResource("34_q8h0n")
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/Sprite2D"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 1191.5
+offset_top = 243.0
+offset_right = 1232.5
+offset_bottom = 285.0
+grow_horizontal = 2
+size_flags_vertical = 0
+
+[node name="faq_button" type="TextureButton" parent="MarginContainer/Sprite2D/MarginContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("34_sxkx5")
+texture_pressed = ExtResource("35_0sfxj")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Sprite2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 187.5
+offset_top = 556.5
+offset_right = 669.5
+offset_bottom = 668.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+
+[node name="Buy_button" type="TextureButton" parent="MarginContainer/Sprite2D/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture_normal = ExtResource("26_dj3hn")
+texture_pressed = ExtResource("27_g7hk1")
+texture_disabled = ExtResource("28_3yu0h")
+stretch_mode = 0
+
+[node name="RUBL_ICON" type="TextureRect" parent="MarginContainer/Sprite2D/MarginContainer/Buy_button"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 78.0
+offset_right = 53.0
+offset_bottom = 125.0
+size_flags_horizontal = 4
+texture = ExtResource("6_57xv5")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Sprite2D/MarginContainer/Buy_button/RUBL_ICON"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = -8.0
+offset_right = 154.0
+offset_bottom = 61.0
+
+[node name="price_of_tanks" type="Label" parent="MarginContainer/Sprite2D/MarginContainer/Buy_button/RUBL_ICON/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "0
+"
+
+[node name="Faq_scene" parent="." instance=ExtResource("39_fjn5b")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Upgrade" to="." method="_on_upgrade_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer3/Chose_left_but" to="." method="_on_chose_left_but_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer3/Chose_right_but" to="." method="_on_chose_right_but_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/back_button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="MarginContainer/Sprite2D/MarginContainer2/faq_button" to="Faq_scene" method="_on_faq_button_pressed"]
+[connection signal="pressed" from="MarginContainer/Sprite2D/MarginContainer/Buy_button" to="." method="_on_buy_button_pressed"]
